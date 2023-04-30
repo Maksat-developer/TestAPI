@@ -35,9 +35,11 @@ INSTALLED_APPS = [
 
     #packages
     'rest_framework',
+    'rest_framework.authtoken',
     'mptt',
     'drf_yasg',
     'django_filters',
+    'djoser',
 
     #apps
     'blog',
@@ -135,6 +137,7 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAdminUser',
+        'rest_framework.authentication.TokenAuthentication',
         
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
