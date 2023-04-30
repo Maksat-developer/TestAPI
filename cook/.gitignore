@@ -1,5 +1,4 @@
 db.sqlite.sql
 venv/
 .env
-migrations/
 .vscode/
